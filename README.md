@@ -5,12 +5,12 @@
 
 The motivation for this module was born from a Google search which led to [this answer](https://stackoverflow.com/a/23105974/13387374) on StackOverflow. 
 
-The code is based on a similar solution found in https://www.npmjs.com/package/number2text which is intended for Indian Currency with optional English Language variant. I intend to 
+The code is based on a similar solution found in https://www.npmjs.com/package/number2text which is intended for Indian Currency with optional English Language variant. I intend to expand to additional languages eventually.
 
-### Usage:
+## Usage:
 
 
-#### Example:
+### Example:
 
 ```js
 const numToName = require('num-to-name');

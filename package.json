@@ -1,6 +1,6 @@
 {
   "name": "@billyjbryant/num-to-name",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts a provided positive integer to its fully qualified name",
   "main": "index.js",
   "scripts": {

@@ -6,7 +6,7 @@
  *
  * @returns {String} Output is the resulting word name for the provided integer
  */
- function numToText(num, sep = '-') {
+ function numToName(num, sep = '-') {
     if (isNaN(num)) throw new Error(`${num} is not a valid number!`);
     if (num < 0) throw new Error('Must provide a positive integer only!');
 
@@ -29,26 +29,26 @@
     let res = "";
 
     if (quintillion > 0) {
-        res += (numToText(quintillion,sep,sep) + sep + "Quintillion");
+        res += (numToName(quintillion,sep,sep) + sep + "Quintillion");
     }
     if (quar > 0) {
-        res += (numToText(quar,sep) + sep + "Quadrillion");
+        res += (numToName(quar,sep) + sep + "Quadrillion");
     }
     if (trin > 0) {
-        res += (numToText(trin,sep) + sep + "Trillion");
+        res += (numToName(trin,sep) + sep + "Trillion");
     }
     if (Gn > 0) {
-        res += (numToText(Gn,sep) + sep + "Billion");
+        res += (numToName(Gn,sep) + sep + "Billion");
     }
     if (million > 0) {
-        res += (((res === "") ? "" : sep) + numToText(million,sep) + sep + "Million");
+        res += (((res === "") ? "" : sep) + numToName(million,sep) + sep + "Million");
     }
     if (Hn > 0) {
-        res += (((res === "") ? "" : sep) + numToText(Hn,sep) + sep + "Thousand");
+        res += (((res === "") ? "" : sep) + numToName(Hn,sep) + sep + "Thousand");
     }
 
     if (Dn) {
-        res += (((res === "") ? "" : sep) + numToText(Dn,sep) + sep + "Hundred");
+        res += (((res === "") ? "" : sep) + numToName(Dn,sep) + sep + "Hundred");
     }
 
     const ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eightteen", "Nineteen"];
@@ -77,4 +77,4 @@
     return res;
 }
 
-module.exports = numToText();
+module.exports = numToName();

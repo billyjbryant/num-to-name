@@ -77,4 +77,4 @@
     return res;
 }
 
-module.exports = numToName();
+module.exports = numToName;
